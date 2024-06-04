@@ -65,9 +65,9 @@ function Countdown() {
         <img src={logoPumped} alt="logo" width={"auto"} height={"100%"}/>
       </div>
       <div className='content'>
-        <div className='content-header'>
+        <div className='content-header unselectable'>
           <h1>STAY <span style={{fontWeight:800,color:"#ffff" }}>PUMPED</span>!</h1>
-          <div className='counter'>
+          <div className='counter unselectable'>
             <GlassBox upperText={"days"} bottomText={timeLeft.days}/>
             <GlassBox upperText={"hours"} bottomText={timeLeft.hours}/>
             <GlassBox upperText={"minutes"} bottomText={timeLeft.minutes}/>
@@ -76,7 +76,7 @@ function Countdown() {
         </div>
         <div className='content-mid'>
           <Marquee className="h1s" speed={130} gradient={false} pauseOnClick={true}>
-            <h1>Coming soon...</h1>
+            <h1 className='unselectable'>Coming soon...</h1>
           </Marquee>
           <Model3D/>
         </div>
