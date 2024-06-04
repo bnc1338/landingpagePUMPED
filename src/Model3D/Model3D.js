@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Model3D.css";
 import ModelViewer from "./ModelViewer";
+import modelFerfi from "./PUMPEDiPHONE15PRO_ferfi.glb";
+import modelNo from "./PUMPEDiPHONE15PRO_no.glb";
 
 const Model3D = () => {
   const [modelPath, setModelPath] = useState("");
@@ -9,8 +11,8 @@ const Model3D = () => {
     // Function to randomly select a model path
     const getRandomModelPath = () => {
       const models = [
-        "./PUMPEDiPHONE15PRO_ferfi.glb",
-        "./PUMPEDiPHONE15PRO_no.glb"
+        modelFerfi,
+        modelNo
       ];
       return models[Math.floor(Math.random() * models.length)];
     };
