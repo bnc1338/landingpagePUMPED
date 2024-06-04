@@ -119,6 +119,7 @@
     flex-direction: row;
     z-index: 0;
     font-weight: 700;
+    font-size: 80px;
     text-transform: uppercase;
     background: radial-gradient(circle, #87878709 0%, #c4c4c410 50%, #d8d8d810 100%);
 }
