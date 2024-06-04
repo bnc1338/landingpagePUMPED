@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/landingpagePUMPED/static/css/main.17d12b2d.css",
+    "main.js": "/landingpagePUMPED/static/js/main.1494922f.js",
+    "static/js/453.7cc4ac12.chunk.js": "/landingpagePUMPED/static/js/453.7cc4ac12.chunk.js",
+    "static/media/pumpedTextPlainLogo.png": "/landingpagePUMPED/static/media/pumpedTextPlainLogo.ad5eaf5d0b528e5e858b.png",
+    "index.html": "/landingpagePUMPED/index.html",
+    "main.17d12b2d.css.map": "/landingpagePUMPED/static/css/main.17d12b2d.css.map",
+    "main.1494922f.js.map": "/landingpagePUMPED/static/js/main.1494922f.js.map",
+    "453.7cc4ac12.chunk.js.map": "/landingpagePUMPED/static/js/453.7cc4ac12.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17d12b2d.css",
+    "static/js/main.1494922f.js"
+  ]
+}
