@@ -119,6 +119,7 @@
     flex-direction: row;
     z-index: 0;
     font-weight: 700;
+    font-size: 80px;
     text-transform: uppercase;
     background: radial-gradient(circle, #87878709 0%, #c4c4c410 50%, #d8d8d810 100%);
 }
@@ -198,4 +199,13 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

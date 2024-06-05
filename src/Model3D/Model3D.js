@@ -22,7 +22,7 @@ const Model3D = () => {
   }, []); // Empty dependency array to run this effect only once on page load
 
   return (
-    <div className="Model3D">
+    <div className="Model3D unselectable">
       <ModelViewer scale="1" modelPath={modelPath} />
     </div>
   );
