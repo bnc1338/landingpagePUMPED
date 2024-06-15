@@ -3,7 +3,8 @@ import "./Model3D.css";
 import ModelViewer from "./ModelViewer";
 import modelFerfi from "./PUMPEDiPHONE15PRO_ferfi.glb";
 import modelNo from "./PUMPEDiPHONE15PRO_no.glb";
-
+import samsungFerfi from "./samsungFerfi.glb";
+import samsungNo from "./samsungNo.glb";
 const Model3D = () => {
   const [modelPath, setModelPath] = useState("");
 
@@ -11,8 +12,7 @@ const Model3D = () => {
     // Function to randomly select a model path
     const getRandomModelPath = () => {
       const models = [
-        modelFerfi,
-        modelNo
+        samsungNo, samsungFerfi, modelFerfi, modelNo
       ];
       return models[Math.floor(Math.random() * models.length)];
     };
@@ -20,12 +20,21 @@ const Model3D = () => {
     // Set the initial model path on page load
     setModelPath(getRandomModelPath());
   }, []); // Empty dependency array to run this effect only once on page load
+  if (modelPath === samsungNo || modelPath === samsungFerfi) {
+    return (
+      <div className="Model3D unselectable">
+        <ModelViewer scale="90" modelPath={modelPath} position={[0, -6, 0]} />
+      </div>
+    );
+  }
+  else {
+    return (
+      <div className="Model3D unselectable">
+        <ModelViewer scale="1" modelPath={modelPath} position={[0, -8, -10]} />
+      </div>
+    );
+  }
 
-  return (
-    <div className="Model3D unselectable">
-      <ModelViewer scale="1" modelPath={modelPath} />
-    </div>
-  );
 };
 
 export default Model3D;
