@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import Marquee from "react-fast-marquee";
 
 function Countdown() {
-  const targetDate = new Date('2024-06-26T18:00:00');
+  const targetDate = new Date('2024-07-10T18:00:00');
   const [email,setEmail] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
 
