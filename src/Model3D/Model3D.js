@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { isIOS, isAndroid } from "react-device-detect";
 import "./Model3D.css";
 import ModelViewer from "./ModelViewer";
 import modelFerfi from "./PUMPEDiPHONE15PRO_ferfi.glb";
@@ -11,10 +12,25 @@ const Model3D = () => {
   useEffect(() => {
     // Function to randomly select a model path
     const getRandomModelPath = () => {
-      const models = [
-        samsungNo, samsungFerfi, modelFerfi, modelNo
-      ];
-      return models[Math.floor(Math.random() * models.length)];
+
+      if (isIOS) {
+        const models = [
+          modelFerfi, modelNo
+        ];
+        return models[Math.floor(Math.random() * models.length)];
+      }
+      else if (isAndroid) {
+        const models = [
+          samsungNo, samsungFerfi
+        ];
+        return models[Math.floor(Math.random() * models.length)];
+      }
+      else {
+        const models = [
+          samsungNo, samsungFerfi, modelFerfi, modelNo
+        ];
+        return models[Math.floor(Math.random() * models.length)];
+      }
     };
 
     // Set the initial model path on page load
