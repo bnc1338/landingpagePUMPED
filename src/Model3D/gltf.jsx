@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import { useLoader, useFrame } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { useEffect } from "react";
 
-const GltfModel = ({ modelPath, scale = 40, position = [0, 0, -100], rotation = [0, Math.PI*2, 0] }) => {
+const GltfModel = ({ modelPath, scale = 40, position = [0, 0, -100], rotation = [0, Math.PI*2, 0],onLoaded }) => {
   const ref = useRef();
   const gltf = useLoader(GLTFLoader, modelPath);
   const [hovered, hover] = useState(false);
@@ -15,6 +16,12 @@ const GltfModel = ({ modelPath, scale = 40, position = [0, 0, -100], rotation = 
       ref.current.rotation.y += (targetRotationY - ref.current.rotation.y) * rotationSpeed;
     }
   });
+
+  useEffect(()=>{
+    if(gltf){
+      onLoaded();
+    }
+  },[gltf])
 
   const handleMouseDown = () => {
     setRotating(true);

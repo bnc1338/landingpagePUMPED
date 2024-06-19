@@ -4,7 +4,7 @@ import ModelViewer from "./ModelViewer";
 import modelFerfi from "./PUMPEDiPHONE15PRO_ferfi.glb";
 import modelNo from "./PUMPEDiPHONE15PRO_no.glb";
 
-const Model3D = () => {
+const Model3D = ({onLoaded}) => {
   const [modelPath, setModelPath] = useState("");
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Model3D = () => {
 
   return (
     <div className="Model3D unselectable">
-      <ModelViewer scale="1" modelPath={modelPath} />
+      <ModelViewer scale="1" modelPath={modelPath} onLoaded={onLoaded} />
     </div>
   );
 };
