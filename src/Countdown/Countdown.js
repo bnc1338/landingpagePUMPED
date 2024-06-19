@@ -61,6 +61,7 @@ function Countdown() {
   };
 
   useEffect(()=>{
+    console.log("loaded");
   },[isLoaded])
 
   function onLoaded(){
