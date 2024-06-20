@@ -6,7 +6,8 @@ import modelFerfi from "./PUMPEDiPHONE15PRO_ferfi.glb";
 import modelNo from "./PUMPEDiPHONE15PRO_no.glb";
 import samsungFerfi from "./samsungFerfi.glb";
 import samsungNo from "./samsungNo.glb";
-const Model3D = () => {
+
+const Model3D = ({onLoaded}) => {
   const [modelPath, setModelPath] = useState("");
 
   useEffect(() => {
@@ -39,18 +40,17 @@ const Model3D = () => {
   if (modelPath === samsungNo || modelPath === samsungFerfi) {
     return (
       <div className="Model3D unselectable">
-        <ModelViewer scale="90" modelPath={modelPath} position={[0, -6, 0]} />
+        <ModelViewer scale="90" modelPath={modelPath} position={[0, -6, 0]} onLoaded={onLoaded} />
       </div>
     );
   }
   else {
     return (
       <div className="Model3D unselectable">
-        <ModelViewer scale="1" modelPath={modelPath} position={[0, -8, -10]} />
+        <ModelViewer scale="1" modelPath={modelPath} position={[0, -8, -10]} onLoaded={onLoaded} />
       </div>
     );
   }
-
 };
 
 export default Model3D;

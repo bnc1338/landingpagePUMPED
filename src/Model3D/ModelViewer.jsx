@@ -4,7 +4,7 @@ import { OrbitControls } from "@react-three/drei";
 import GltfModel from "./gltf";
 import { AmbientLight, Camera } from "three";
 
-const ModelViewer = ({ modelPath, scale = 40, position = [0, 0, 10] }) => {
+const ModelViewer = ({ modelPath, scale = 40, position = [0, 0, 10], onLoaded }) => {
   return (
     <Canvas shadows
       pixelRatio={window.devicePixelRatio}
@@ -28,9 +28,9 @@ const ModelViewer = ({ modelPath, scale = 40, position = [0, 0, 10] }) => {
           shadow-camera-bottom={-10}
         />
 
-        <mesh>
-          <GltfModel modelPath={modelPath} scale={scale} position={position} />
-        </mesh>
+      <mesh>
+        <GltfModel modelPath={modelPath} scale={scale} position={position} onLoaded={onLoaded}/>
+      </mesh>
 
       </Suspense>
     </Canvas>
