@@ -54,7 +54,7 @@ const Model3D = ({ onLoaded }) => {
   // }
   return (
     <div className="Model3D unselectable">
-      <ModelViewer scale="70" modelPath={samsungIphone} position={[0.2, -5, 0]} onLoaded={onLoaded} />
+      <ModelViewer scale="70" modelPath={samsungIphone} position={[0, -5, 0]} onLoaded={onLoaded} />
     </div>
   );
 };
