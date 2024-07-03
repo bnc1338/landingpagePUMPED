@@ -1,0 +1,97 @@
+.Header {
+    width: 100vw;
+    flex: 0.9;
+    text-align: center;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+
+.left-side {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #87878711 0%, #c4c4c418 50%, #d8d8d81e 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 0px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+
+
+.subscribe-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.submit {
+    background: radial-gradient(circle, #87878711 0%, #c4c4c418 50%, #d8d8d81e 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: 0px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.Content {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.displaynone {
+    width: 0vw !important;
+    height: 0vh !important;
+    visibility: hidden;
+}
+
+.background-gradient {
+    height: 100vh;
+    width: 200vw;
+    background: linear-gradient(135deg, #0e0e0e, #FFB900 800%);
+}
+
+.topBar {
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 40px;
+}
