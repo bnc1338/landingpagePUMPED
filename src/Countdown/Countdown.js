@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import Marquee from "react-fast-marquee";
 
 function Countdown() {
-  const targetDate = new Date('2024-08-T28:00:00');
+  const targetDate = new Date('2024-08-28T18:00:00');
   const [email,setEmail] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
   const [isLoaded,setIsLoaded] = useState(false);
@@ -37,7 +37,7 @@ function Countdown() {
     if (emailRegex.test(email)) {
       setShowPopup(true);
       try{
-        const data = fetch('https://europe-central2-pumped-8bd42.cloudfunctions.net/api/subscribe', {
+        const data = fetch('https://us-central1-pumped-8bd42.cloudfunctions.net/api/subscribe', {
           method: 'post',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
