@@ -37,7 +37,7 @@ function Countdown() {
     if (emailRegex.test(email)) {
       setShowPopup(true);
       try{
-        const data = fetch('https://us-central1-pumped-8bd42.cloudfunctions.net/api/subscribe', {
+        const data = fetch('https://europe-central2-pumped-8bd42.cloudfunctions.net/api/subscribe', {
           method: 'post',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
