@@ -16,6 +16,7 @@
     "react-router-dom": "^6.24.1",
     "react-scripts": "5.0.1",
     "react-three-fiber": "^6.0.13",
+    "react-youtube": "^10.1.0",
     "three": "^0.164.1",
     "three-stdlib": "^2.29.12",
     "web-vitals": "^2.1.4"

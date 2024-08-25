@@ -1,0 +1,70 @@
+.Showcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Showcase > .upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.Showcase > .upper > .left{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Showcase > .upper > .left >h1 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.Showcase > .upper > .left > p {
+    font-size: 13px;
+    max-width: 400px;
+}
+
+
+.Showcase > .upper > .right{
+
+}
+
+
+.Showcase > .mid {
+    margin: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.Showcase > .mid > .right{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Showcase > .mid > .right >h1 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.Showcase > .mid > .right > p {
+    font-size: 13px;
+    max-width: 400px;
+}
+
+
+.Showcase > .mid > .left{
+
+}
