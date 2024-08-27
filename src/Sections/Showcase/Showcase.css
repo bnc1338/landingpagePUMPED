@@ -1,0 +1,110 @@
+.Showcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: transparent;
+}
+
+.Showcase > .upper {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    width:60vw;
+}
+
+.Showcase > .upper > .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Showcase > .upper > .left >h1 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.Showcase > .upper > .left > p {
+    margin-top: 20px;
+    font-size: 18px;
+    max-width: 400px;
+}
+
+.Showcase > .mid {
+    margin: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.Showcase > .mid > .right{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Showcase > .mid > .right >h1 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.Showcase > .mid > .right > p {
+    margin-top:20px;
+    font-size: 18px;
+    max-width: 400px;
+}
+
+.partners{
+    height: 100px;
+    margin:50px;
+    margin-bottom: 350px;
+    margin-top: 500px;
+}
+
+ .icons{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.levels{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-self: center;
+}
+
+.levels > h1{
+    font-weight:900;
+    text-transform: uppercase;
+    font-style:italic;
+}
+
+.levels > .content{
+    height: 300px;
+    margin-top: 50px;
+    min-width: 1000px;
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.levels > .content > .product{
+    display: flex;
+    font-weight: 300;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}

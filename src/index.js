@@ -2,12 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import './index.css';
 import DeleteAccountPage from './DeleteAccountPage';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import '@fontsource/montserrat'; // Defaults to weight 400.
+import '@fontsource/montserrat/400.css'; // Weight 400 with normal style.
+import '@fontsource/montserrat/700.css'; // Weight 700 with normal style.
+
 
 const router = createBrowserRouter([
   {

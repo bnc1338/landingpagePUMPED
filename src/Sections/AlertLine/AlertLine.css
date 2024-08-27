@@ -1,0 +1,25 @@
+.AlertLine {
+    overflow-y: hidden !important;
+    overflow: hidden !important;
+    position: fixed;  
+    top: 0;  
+    left: 0; 
+    width: 100%; 
+    height: 40px;
+    z-index: 1000;  
+    background-color: black;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Marquee {
+    overflow-y: hidden !important;
+    overflow: hidden !important;
+    height: 40px;
+}
+
+.AlertLine > .Marquee h1 {
+    color: white;
+    margin-left: 130px;
+}

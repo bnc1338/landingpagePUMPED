@@ -1,0 +1,110 @@
+.Navbar-container{
+    width: 100vw;
+    display: flex;
+    margin-top: 80px;
+    position: absolute;
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  height: 60px;
+  border-radius: 5px;
+  width: 95vw;
+  padding: 10px 20px;
+  background-color: #ffffff61;
+  color: #fff;
+  backdrop-filter: blur(18px); /* Apply background blur */
+  -webkit-backdrop-filter: blur(18px); /* For Safari support */
+  transition: transform 0.3s ease-in-out;
+}
+  
+  .navbar-hide {
+    transform: translateY(-200%);
+  }
+  
+  .navbar-show {
+    transform: translateY(0);
+  }
+  
+  .navbar-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .navbar-buttons {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .navbar-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-buttons button:hover {
+  }
+  
+  .navbar-extra {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .navbar-extra button {
+    padding: 10px 20px;
+    background-color: #F7C542;
+    color: black;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    transition: background-color 0.3s, border-color 0.3s;
+    border: 2px solid transparent;
+    border-radius: 5px; 
+  }
+
+  @media (max-width: 860px) {
+    .navbar-buttons button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      font-size: 12px;
+      font-weight: 500;
+      color: black;
+      background-color: transparent;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .navbar-extra button {
+      padding: 10px 20px;
+      background-color: #F7C542;
+      color: black;
+      cursor: pointer;
+      font-size: 9px;
+      width: 120px;
+      font-weight: 700;
+      transition: background-color 0.3s, border-color 0.3s;
+      border: 2px solid transparent;
+      border-radius: 5px; 
+    }
+  
+  }
+  
