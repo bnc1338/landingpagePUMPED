@@ -7,6 +7,9 @@ import AlertLine from './Sections/AlertLine/AlertLine.js';
 import Competition from './Sections/Competition/Competition.js';
 import Video from "./Sections/Video/Video.js";
 import Showcase from './Sections/Showcase/Showcase.js';
+import Download from "./Sections/Download/Download.js";
+import BananasBack from "./Sections/BananasBack/BananasBack.js";
+
 function App() {
   return (
     <div className="App">
@@ -16,8 +19,11 @@ function App() {
       <Container>
         <Home/>
         <Video/>
-        <Competition/>
-        <Showcase/>
+        <Competition/>  
+        <BananasBack>
+          <Showcase/>
+        </BananasBack>
+        <Download/>
       </Container> */}
     </div>
   );

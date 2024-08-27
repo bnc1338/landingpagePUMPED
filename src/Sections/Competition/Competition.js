@@ -1,42 +1,25 @@
 import './Competition.css';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import truck from "../../assets/truck.png";
-
 function Competition() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.pageYOffset;
-      setScrollPosition(position);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const truckPosition = Math.max(0, window.innerWidth - scrollPosition * 0.5);
 
   return (
     <div className='Competition'>
-      {/* ... other parts of your component ... */}
-      <div className='parallax'>
-        <h1>Get Rewarded By</h1>
-        <img 
-          src={truck} 
-          alt='truck' 
-          className="moving-truck" 
-          style={{
-            transform: `translateX(${truckPosition}px)`
-          }}
-        />
-        <p className="debug-info">
-          Scroll position: {scrollPosition}px<br/>
-          Truck position: {truckPosition}px
+      <div className='container-header'>
+        <h4>We search</h4>
+        <h1>The Most Unreal 🍑Picture on Earth</h1>
+      </div>
+      <div className='container-mid'>
+        <p>
+        This is a contest to find the most unreal 🍑 pic on Earth. We want something that blows minds. 
+        It's got to be next-level, jaw-dropping, out-of-this-world. Just pure wow. 
+        We're looking for you to show us something that’s straight-up unreal and unforgettable. 
+        So, post your craziest, most unexpected snap of your 🍑, and you could win a 500 euro Sciatic Nutrition voucher. .That's the deal. Let’s see what you've got!
         </p>
+        <h3>🎉Get Rewararded by🎉</h3>
+        <div className='parallax'>
+          <img src={truck} alt='truck' width={1000} className="moving-truck" />
+        </div>
       </div>
     </div>
   );

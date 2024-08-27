@@ -1,0 +1,59 @@
+.Download{
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.Download > .upper{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Download > .upper > .right{
+    display: flex;
+    width: 30vw;
+    justify-content: center;
+}
+
+.Download > .upper > .left{
+    color:white;
+    display: flex;
+    width: 60vw;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Download > .upper > .left > .pumpedLogo{
+margin-left: -25px;
+}
+
+.Download > .upper > .left > .buttons{
+    display:flex;
+    margin:40px;
+    width: 430px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.Download > .upper > .left > h1{
+    margin-left: 100px;
+    text-align: left;
+    color: white;
+    margin:-15px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 90px;
+}
+
+.Download > .down{
+    margin-bottom: 20px;
+    text-align: center;
+    color:rgb(129, 129, 129);
+}
+
