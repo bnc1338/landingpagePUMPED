@@ -13,8 +13,8 @@ import BananasBack from "./Sections/BananasBack/BananasBack.js";
 function App() {
   return (
     <div className="App">
-      <Countdown/> 
-      {/* <AlertLine/>
+      {/* <Countdown/>  */}
+      <AlertLine/>
       <Navbar/>
       <Container>
         <Home/>
@@ -24,7 +24,7 @@ function App() {
           <Showcase/>
         </BananasBack>
         <Download/>
-      </Container> */}
+      </Container>
     </div>
   );
 }
