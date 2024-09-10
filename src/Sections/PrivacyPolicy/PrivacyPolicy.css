@@ -1,0 +1,11 @@
+.PrivacyPolicy{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: black;
+    width: 80vw;
+}
