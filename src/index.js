@@ -12,6 +12,7 @@ import {
 import '@fontsource/montserrat'; // Defaults to weight 400.
 import '@fontsource/montserrat/400.css'; // Weight 400 with normal style.
 import '@fontsource/montserrat/700.css'; // Weight 700 with normal style.
+import PrivacyPolicy from './Sections/PrivacyPolicy/PrivacyPolicy';
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/delete-account",
     element: <DeleteAccountPage />,
+  },
+  {
+    path: "/privacy-policy",
+    element: <PrivacyPolicy />,
   }
 ]);
 
