@@ -16,15 +16,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-
       <Router>
         <Routes>
           <Route exact path="/" element={
-            <Container>
-              <Countdown />
-              <Home />
-            </Container>
-
+            <Countdown />
             /* 
             <AlertLine />
             <Navbar />
