@@ -20,7 +20,6 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={
-
             <Container>
               <Countdown />
               <Home />
