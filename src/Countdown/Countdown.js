@@ -6,10 +6,10 @@ import { useEffect, useState } from 'react';
 import Marquee from "react-fast-marquee";
 
 function Countdown() {
-  const targetDate = new Date('2024-09-15T18:00:00');
-  const [email,setEmail] = useState(null);
+  const targetDate = new Date('2024-09-22T18:00:00');
+  const [email, setEmail] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
-  const [isLoaded,setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const calculateTimeLeft = () => {
     const difference = targetDate - new Date();
@@ -26,7 +26,7 @@ function Countdown() {
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
-  }, 1000);
+    }, 1000);
 
     return () => clearInterval(timer);
   }, []);
@@ -36,66 +36,67 @@ function Countdown() {
 
     if (emailRegex.test(email)) {
       setShowPopup(true);
-      try{
+      try {
         const data = fetch('https://us-central1-pumped-8bd42.cloudfunctions.net/api/subscribe', {
           method: 'post',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-          email:email
-        })}); 
+            email: email
+          })
+        });
         console.log(data);
       }
-      catch(error){
+      catch (error) {
         console.log("failed to send email");
       }
 
       setTimeout(() => {
         setShowPopup(false);
-        
+
       }, 3000);
       setEmail("");
     } else {
-      
+
     }
-    
+
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     console.log("loaded");
-  },[isLoaded])
+  }, [isLoaded])
 
-  function onLoaded(){
+  function onLoaded() {
     setIsLoaded(true);
   }
 
   return (
     <div className='Countdown'>
-      <div className={`${isLoaded ? "Countdown-Container background-gradient": "Countdown-Container background-gradient displaynone"}`}>
+      <div className={`${isLoaded ? "Countdown-Container background-gradient" : "Countdown-Container background-gradient displaynone"}`}>
         <div className='topBar'>
-          <img src={logoPumped} alt="logo" width={"auto"} height={"100%"}/>
+          <img src={logoPumped} alt="logo" width={"auto"} height={"100%"} />
         </div>
         <div className='content'>
           <div className='content-header unselectable'>
-            <h1>STAY <span style={{fontWeight:800,color:"#ffff" }}>PUMPED</span>!</h1>
+            <h1>STAY <span style={{ fontWeight: 800, color: "#ffff" }}>PUMPED</span>!</h1>
             <div className='counter unselectable'>
-              <GlassBox upperText={"days"} bottomText={timeLeft.days}/>
-              <GlassBox upperText={"hours"} bottomText={timeLeft.hours}/>
-              <GlassBox upperText={"minutes"} bottomText={timeLeft.minutes}/>
-              <GlassBox upperText={"seconds"} bottomText={timeLeft.seconds}/>
+              <GlassBox upperText={"days"} bottomText={timeLeft.days} />
+              <GlassBox upperText={"hours"} bottomText={timeLeft.hours} />
+              <GlassBox upperText={"minutes"} bottomText={timeLeft.minutes} />
+              <GlassBox upperText={"seconds"} bottomText={timeLeft.seconds} />
             </div>
           </div>
           <div className='content-mid'>
             <Marquee className="h1s" speed={130} gradient={false} pauseOnClick={true}>
               <h1 className='unselectable'>Coming soon...</h1>
             </Marquee>
-            <Model3D onLoaded={onLoaded}/>
+            <Model3D onLoaded={onLoaded} />
           </div>
           <div className='content-footer'>
-            <h1>Join the <span style={{color:"#F7C542"}}>fitness</span> revolution!</h1>
+            <h1>Join the <span style={{ color: "#F7C542" }}>fitness</span> revolution!</h1>
             <div className='subscribe-container'>
-            <input type='text' className='left-side' placeholder='Type your email...' value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input type='text' className='left-side' placeholder='Type your email...' value={email} onChange={(e) => setEmail(e.target.value)} />
               <div className='right-side' onClick={sendEmailHandler}>
-                <p>{showPopup ? "Joined": "Join"}</p>
+                <p>{showPopup ? "Joined" : "Join"}</p>
               </div>
             </div>
           </div>
