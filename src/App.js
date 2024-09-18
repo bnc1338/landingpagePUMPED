@@ -17,7 +17,6 @@ import Eula from './Sections/Eula/Eula.js';
 function App() {
   return (
     <div className="App">
-
       <Router>
         <Routes>
           <Route exact path="/" element={
@@ -25,7 +24,6 @@ function App() {
               <Countdown />
               /* <Home />
             </Container> */
-
             /* 
             <AlertLine />
             <Navbar />
