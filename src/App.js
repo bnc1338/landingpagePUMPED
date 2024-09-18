@@ -12,6 +12,7 @@ import BananasBack from "./Sections/BananasBack/BananasBack.js";
 import DeleteAccountPage from './DeleteAccountPage';
 import PrivacyPolicy from './Sections/PrivacyPolicy/PrivacyPolicy';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Eula from './Sections/Eula/Eula.js';
 
 function App() {
   return (
@@ -19,7 +20,10 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={
-            <Countdown />
+            // <Container>
+              <Countdown />
+              /* <Home />
+            </Container> */
             /* 
             <AlertLine />
             <Navbar />
@@ -40,6 +44,9 @@ function App() {
           <Route
             path="/privacy-policy"
             element={<PrivacyPolicy />} />
+          <Route
+          path='/eula'
+          element={<Eula/>} />
         </Routes>
       </Router>
 
