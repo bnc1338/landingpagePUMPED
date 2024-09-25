@@ -16,12 +16,18 @@ function Home() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const handleJoinClick = () => {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: 'smooth',
+        });
+      };
 
     return (
         <div className='Home'>
             <div className='home-container'>
                 <h1>Let's make fitness</h1><h1>great again</h1>
-                <button>JOIN NOW!</button>
+                <button onClick={handleJoinClick}>JOIN NOW!</button>
                 <div className='mockups'>
                     {screenWidth>600 ? 
                     <>

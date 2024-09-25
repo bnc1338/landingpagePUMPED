@@ -1,5 +1,5 @@
 .Download{
-    background-color: black;
+    background-color: transparent;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -57,3 +57,70 @@ margin-left: -25px;
     color:rgb(129, 129, 129);
 }
 
+@media (max-width: 860px) {
+    .Download{
+        background-color: transparent;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .Download > .upper > .left{
+        color:white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60vw;
+    }
+
+    .Download > .upper > .left > .pumpedLogo{
+            margin-top: 10px;
+            margin-left: 0;
+            margin-bottom: -15px;
+    }
+
+    .Download > .upper > .left > h1{
+        color: white;
+        text-align: center!important;
+        text-align: left;
+        margin-top: 5px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 55px;
+    }
+
+
+    .Download > .upper > .left > .buttons{
+        display:flex;
+        margin:30px;
+        width: 210px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .Download > .upper{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .Download > .upper > .right{
+        display: flex;
+        width: 30vw;
+        justify-content: center;
+    }
+    
+    .Download > .down{
+        margin-top: 10px;
+        text-align: center;
+        color:rgb(129, 129, 129);
+    }
+    
+
+}

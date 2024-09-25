@@ -12,6 +12,7 @@ import BananasBack from "./Sections/BananasBack/BananasBack.js";
 import DeleteAccountPage from './DeleteAccountPage';
 import PrivacyPolicy from './Sections/PrivacyPolicy/PrivacyPolicy';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Partnership from './Sections/Partnership/Partnership.js';
 import Eula from './Sections/Eula/Eula.js';
 
 function App() {
@@ -21,22 +22,23 @@ function App() {
         <Routes>
           <Route exact path="/" element={
             // <Container>
-              <Countdown />
-              /* <Home />
-            </Container> */
-            /* 
-            <AlertLine />
+            //   {/* <Countdown /> */}
+            //   /* <Home />
+            // </Container> 
+            <>
+            {/* <AlertLine /> */}
             <Navbar />
             <Container>
               <Home />
               <Video />
-              <Competition />
+              {/* <Competition /> */}
               <BananasBack>
                 <Showcase />
+                <Download />
               </BananasBack>
-              <Download />
+              
             </Container>
-          </Container>} */
+            </>
           } />
           <Route
             path="/delete-account"
@@ -47,6 +49,9 @@ function App() {
           <Route
           path='/eula'
           element={<Eula/>} />
+          <Route
+          path='/partnership'
+          element={<Partnership/>} />
         </Routes>
       </Router>
 

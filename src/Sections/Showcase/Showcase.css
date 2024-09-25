@@ -1,7 +1,6 @@
 .Showcase{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100vw;
     background-color: transparent;
@@ -45,7 +44,6 @@
 .Showcase > .mid > .right{
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -62,11 +60,29 @@
     max-width: 400px;
 }
 
+.Showcase > .low {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;    
+    color: white;
+}
+
+.Showcase > .low > h2{
+    font-size: x-large;
+    font-weight: 300;
+    color: #ffffff18;
+    text-shadow: #49494985 0px 0px 1px;
+}
+
 .partners{
     height: 100px;
     margin:50px;
+    margin-top: 140px;
     margin-bottom: 350px;
-    margin-top: 500px;
 }
 
  .icons{
@@ -83,6 +99,7 @@ align-items: center;
 justify-self: center;
 }
 
+
 .levels > h1{
     font-weight:900;
     text-transform: uppercase;
@@ -97,7 +114,7 @@ justify-self: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .levels > .content > .product{
@@ -106,5 +123,25 @@ justify-self: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 860px) {
+    .levels > .content{
+        height: 300px;
+        margin-top: 50px;
+        min-width: 550px;
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .Showcase > .low > h2{
+        font-size: large;
+        font-weight: 300;
+        color: #ffffff18;
+        text-shadow: #49494985 0px 0px 1px;
+    }
 
 }

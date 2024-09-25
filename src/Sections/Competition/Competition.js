@@ -18,7 +18,7 @@ function Competition() {
         </p>
         <h3>🎉Get Rewararded by🎉</h3>
         <div className='parallax'>
-          <img src={truck} alt='truck' width={1000} className="moving-truck" />
+          {/* <img src={truck} alt='truck' width={1000} className="moving-truck" /> */}
         </div>
       </div>
     </div>

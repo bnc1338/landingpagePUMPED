@@ -51,7 +51,7 @@
     padding: 10px 20px;
     border: none;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 800;
     color: black;
     background-color: transparent;
     cursor: pointer;
@@ -74,7 +74,7 @@
     color: black;
     cursor: pointer;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 800;
     transition: background-color 0.3s, border-color 0.3s;
     border: 2px solid transparent;
     border-radius: 5px; 

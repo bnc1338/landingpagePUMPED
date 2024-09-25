@@ -1,6 +1,11 @@
-.BananasBack{
+.BananasBack {
     background-image: url('../../assets/Frame 19.png');
     background-repeat: no-repeat;
     background-size:cover;
-    height: auto;
-}
+    transition: background-color 0.4s ease; /* Smooth transition */
+  }
+  
+  .BananasBack.scrolled-half {
+    background-color: black; /* Black background color when scrolled */
+  }
+  
