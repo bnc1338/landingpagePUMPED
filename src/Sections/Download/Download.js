@@ -43,8 +43,12 @@ function Download() {
             <h1>
               Android / iOS</h1>
             <div className='buttons'>
+            <a href="https://apps.apple.com/app/pumped/id6505126443" target="_blank" rel="noopener noreferrer">
               <img src={appStore} width={screenWidth > 860 ? 200 :100} style={{borderRadius:screenWidth>860 ?8:4}} />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.ThePumped" target="_blank" rel="noopener noreferrer">
               <img src={googlePlay} width={screenWidth > 860 ? 200 :100} style={{borderRadius:screenWidth>860 ?8:4}} />
+            </a>
             </div>
         </div>
         <div className='right'>

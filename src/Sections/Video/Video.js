@@ -42,7 +42,7 @@ function Video() {
             loop: 1, // Enable loopingjjjjhhhyyyttthhhjjjjjj,,,,tfggfdsfg
             playlist: videoId, // To make loop work, set the playlist to the video ID
         },
-    };   kkk                            
+    };                            
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -76,7 +76,7 @@ function Video() {
             <div className='video-inner'>
                 <YouTube videoId={videoId} opts={opts} onReady={onReady} />
                 {isMuted && (
-                    <button className="unmute-button" onClick={unmuteVideo}>
+                    <button className="unmut-ebutton" onClick={unmuteVideo}>
                         Click to Unmute
                     </button>
                 )}

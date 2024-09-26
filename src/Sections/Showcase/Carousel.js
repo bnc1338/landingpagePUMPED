@@ -79,10 +79,10 @@ const Carousel = ({screenWidth}) => {
         
         {/* Fixed App Store and Play Store logos */}
         <div className="store-logos">
-          <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener noreferrer">
+          <a href="https://apps.apple.com/app/pumped/id6505126443" target="_blank" rel="noopener noreferrer">
             <img src={appStoreLogo} alt="App Store" width={25} />
           </a>
-          <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank" rel="noopener noreferrer">
+          <a href="https://play.google.com/store/apps/details?id=com.ThePumped" target="_blank" rel="noopener noreferrer">
             <img src={playStoreLogo} alt="Play Store" width={25} />
           </a>
         </div>
