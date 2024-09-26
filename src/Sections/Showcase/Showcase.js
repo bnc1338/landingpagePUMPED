@@ -55,16 +55,16 @@ function Showcase() {
           </div>
         }
         <div className='product'>
-        <p style={{fontSize:17}}>LEVEL 4</p>
-          <img src={prod2} alt='prod1' width={screenWidth>860 ? 170 : 130}/>
+        <p style={{fontSize:screenWidth>860 ? 17 :13}}>LEVEL 4</p>
+          <img src={prod2} alt='prod1' width={screenWidth>860 ?  screenWidth>540 ? 170 : 130 :100}/>
         </div>
         <div className='product'>
-        <p style={{fontSize:22}}>LEVEL 5</p>
-          <img src={prod3} alt='prod1' width={screenWidth>860 ? 220 : 180}/>
+        <p style={{fontSize: screenWidth>860 ? 22 : 18}}>LEVEL 5</p>
+          <img src={prod3} alt='prod1' width={screenWidth>860 ? screenWidth>540 ? 220 : 180 : 120}/>
         </div>
         <div className='product'>
-        <p style={{fontSize:17}}>LEVEL 6</p>
-          <img src={prod4} alt='prod1' width={screenWidth>860 ? 170 : 130}/>
+        <p style={{fontSize: screenWidth>860 ? 17 :13}}>LEVEL 6</p>
+          <img src={prod4} alt='prod1' width={screenWidth>860 ? screenWidth>540 ?170 : 130 :100}/>
         </div>
         {
           screenWidth>860 &&

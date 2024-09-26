@@ -75,6 +75,7 @@
     font-size: x-large;
     font-weight: 300;
     color: #ffffff18;
+    text-align: center;
     text-shadow: #49494985 0px 0px 1px;
 }
 
@@ -126,10 +127,28 @@ justify-self: center;
 }
 
 @media (max-width: 860px) {
+    .Showcase > .mid {
+        margin: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .levels > h1{
+        font-weight:900;
+        font-size: x-large;
+        text-transform: uppercase;
+        font-style:italic;
+    }
+
+    .levels > p{
+        font-size: medium;
+    }
+
     .levels > .content{
         height: 300px;
         margin-top: 50px;
-        min-width: 550px;
+        min-width: 400px;
         width: 50vw;
         display: flex;
         flex-direction: row;
@@ -139,6 +158,46 @@ justify-self: center;
 
     .Showcase > .low > h2{
         font-size: large;
+        font-weight: 300;
+        text-align: center;
+        color: #ffffff18;
+        text-shadow: #49494985 0px 0px 1px;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .Showcase > .mid {
+        margin: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .levels > h1{
+        font-weight:900;
+        font-size: x-large;
+        text-transform: uppercase;
+        font-style:italic;
+    }
+
+    .levels > p{
+        font-size: small;
+    }
+
+    .levels > .content{
+        height: 300px;
+        margin-top: 50px;
+        width: 40vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .Showcase > .low > h2{
+        font-size: medium;
+        text-align: center;
         font-weight: 300;
         color: #ffffff18;
         text-shadow: #49494985 0px 0px 1px;
