@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import YouTube from 'react-youtube';
 
 function Video() {
-    const videoId = 'ZeEo-ohM1tA'; // Your YouTube video ID
+    const videoId = 'rn0AtmKN8lk'; // Your YouTube video ID
     const [player, setPlayer] = useState(null);
     const [isMuted, setIsMuted] = useState(true);
     const videoRef = useRef(null);
@@ -36,13 +36,13 @@ function Video() {
         width: screenWidth>400 ? screenWidth > 700 ? screenWidth >920 ? '888' : '686' : '500' : '300',
         playerVars: {
             autoplay: 0, // Don't autoplay initially
-            controls: 0, // Show player controls
+    controls: 0, // Show player controls    l f   
             modestbranding: 0, // Remove YouTube logo
-            showinfo: 0,
-            loop: 1, // Enable looping
+            showinfo: 0,            
+            loop: 1, // Enable loopingjjjjhhhyyyttthhhjjjjjj,,,,tfggfdsfg
             playlist: videoId, // To make loop work, set the playlist to the video ID
         },
-    };
+    };   kkk                            
 
     useEffect(() => {
         const observer = new IntersectionObserver(
