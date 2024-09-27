@@ -26,18 +26,19 @@ function App() {
             //   /* <Home />
             // </Container> 
             <>
-            {/* <AlertLine /> */}
-            <Navbar />
-            <Container>
-              <Home />
-              <Video />
-              {/* <Competition /> */}
-              <BananasBack>
-                <Showcase />
-                <Download />
-              </BananasBack>
-              
-            </Container>
+              {/* <AlertLine /> 
+            //mukodj*/}
+              <Navbar />
+              <Container>
+                <Home />
+                <Video />
+                {/* <Competition /> */}
+                <BananasBack>
+                  <Showcase />
+                  <Download />
+                </BananasBack>
+
+              </Container>
             </>
           } />
           <Route
@@ -47,11 +48,11 @@ function App() {
             path="/privacy-policy"
             element={<PrivacyPolicy />} />
           <Route
-          path='/eula'
-          element={<Eula/>} />
+            path='/eula'
+            element={<Eula />} />
           <Route
-          path='/partnership'
-          element={<Partnership/>} />
+            path='/partnership'
+            element={<Partnership />} />
         </Routes>
       </Router>
 
