@@ -28,14 +28,14 @@
 
 }
 
-.unmute-button {
+.unmut-ebutton {
     position: absolute;
     margin: auto;   
     justify-self: start;
     padding: 10px 20px;
     font-size: 10px;
     color: white;
-    top:10px;
+    top:20px;
     background-color: rgba(255, 255, 255, 0.257); /* Eye-catching tomato color */
     border: none;
     border-radius: 5px;
@@ -45,7 +45,7 @@
     transition: transform 0.2s;
 }
 
-.unmute-button:hover {
+.unmut-ebutton:hover {
     transform: scale(1.1); /* Slightly enlarge the button on hover for effect */
 }
 

@@ -43,6 +43,10 @@ const Navbar = () => {
     });
   };
 
+  const handleContactClick = () => {
+    window.location.href = 'mailto:business@thepumpedapp.com';
+  };
+
   return (
     <div className='Navbar-container'>
       <nav className={`navbar ${show ? 'navbar-show' : 'navbar-hide'}`}>
@@ -51,6 +55,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-buttons">
           <button onClick={handleDownloadClick}>Download</button>
+          <button onClick={handleContactClick}>Contact</button>
         </div>
         <div className="navbar-extra">
           <button onClick={() => window.location.href = 'https://thepumpedapp.com/partnership'}>Become Partner</button>
