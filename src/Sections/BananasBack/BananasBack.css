@@ -9,3 +9,17 @@
     background-color: black; /* Black background color when scrolled */
   }
   
+  .instagram-icon {
+    position: fixed;
+    top:50vh;
+    bottom: 50vh;
+    right: 20px;
+    opacity: 20%;
+    text-decoration: none;
+    z-index: 1000; /* Ensure it appears on top of other elements */
+    transition: transform 0.3s ease;
+}
+
+.instagram-icon:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
