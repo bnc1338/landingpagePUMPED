@@ -14,6 +14,7 @@ import PrivacyPolicy from './Sections/PrivacyPolicy/PrivacyPolicy';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Partnership from './Sections/Partnership/Partnership.js';
 import Eula from './Sections/Eula/Eula.js';
+import Register from './Sections/Regiser/Register.js';
 
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
           <Route
             path='/partnership'
             element={<Partnership />} />
+          <Route
+            path='/register'
+            element={<Register />} />
         </Routes>
       </Router>
 
