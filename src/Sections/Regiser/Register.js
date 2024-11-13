@@ -7,7 +7,7 @@ const Register = () => {
     const referralCode = urlParams.get('code') || '';
 
     // Define the custom URI for deep linking in the app
-    const appLink = `pumped://register`;
+    const appLink = `pumped://register/${referralCode}`;
     const fallbackUrl = 'https://apps.apple.com/us/app/pumped-fitness-social-network/id6505126443'; // App Store link as fallback
     const androidFallbackUrl = 'https://play.google.com/store/apps/details?id=com.ThePumped'; // Play Store link as fallback
 
