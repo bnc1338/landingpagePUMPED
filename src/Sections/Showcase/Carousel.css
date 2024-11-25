@@ -67,6 +67,23 @@
     cursor: pointer; /* Change cursor to indicate clickable logos */
   }
 
+  @media (max-width: 1080px) {
+    .mid {
+        display: flex;
+        align-items: center;
+        width:65vw;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+      }
+      .mid > .right {
+        width: 300px;
+        margin-left: 5;
+      }
+    }
+
   @media (max-width: 860px) {
   .mid {
       display: flex;
@@ -83,4 +100,6 @@
       margin: 0;
     }
   }
+
+  
     

@@ -57,9 +57,9 @@ const Navbar = () => {
           <button onClick={handleDownloadClick}>Download</button>
           <button onClick={handleContactClick}>Contact</button>
         </div>
-        <div className="navbar-extra">
+        {/* <div className="navbar-extra">
           <button onClick={() => window.location.href = 'https://thepumpedapp.com/partnership'}>Become Partner</button>
-        </div>
+        </div> */}
       </nav>
     </div>
   );

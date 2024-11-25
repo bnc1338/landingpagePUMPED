@@ -32,7 +32,7 @@ function Video() {
     };
 
     const opts = {
-        height: screenWidth>400 ? screenWidth > 700 ? screenWidth >920 ? '500' : '386' : '282' : '182',
+        height: screenWidth>400 ? screenWidth > 700 ? screenWidth >920 ? '500' : '386' : '282' : '169',
         width: screenWidth>400 ? screenWidth > 700 ? screenWidth >920 ? '888' : '686' : '500' : '300',
         playerVars: {
             autoplay: 0, // Don't autoplay initially
