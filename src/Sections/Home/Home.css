@@ -16,20 +16,117 @@
     text-align: center;
 }
 
-.Home > .home-container > button {
-    padding: 10px 20px;
-    background-color: #F7C542;
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
-    margin: 50px;
-    width: 200px;
-    min-height:60px;
-    font-weight: 600;
-    transition: background-color 0.3s, border-color 0.3s;
-    border: 2px solid transparent;
-    border-radius: 18px; 
+.custom-button {
+  padding: 10px 20px;
+  background-color: #F7C542;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem; /* Adjusted for better scaling */
+  margin: 40px auto; /* Center alignment and reduced margin */
+  width: 100%; /* Makes the button responsive */
+  max-width: 300px; /* Limits the width for large screens */
+  min-height: 60px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: center;
+  justify-content: space-between; /* Even spacing between items */
+  gap: 10px; /* Add spacing between child elements */
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: transparent 0px;
+}
+
+.custom-button:hover {
+  background-color: #b48a21;
+  
+  border: transparent 0px;
+}
+
+.hover-effect {
+  position: absolute;
+  right: 0;
+  top: -3rem;
+  height: 8rem;
+  width: 2rem;
+  background: white;
+  opacity: 0.1;
+  transform: translateX(3rem) rotate(12deg);
+  transition: transform 1s ease-out;
+}
+
+.custom-button:hover .hover-effect {
+  transform: translateX(-10rem) rotate(12deg);
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 10px; /* Adds spacing between text and icon */
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Adds spacing between items */
+}
+
+.star-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.counter {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(107, 107, 107, 0.8);
+}
+
+@media (max-width: 768px) {
+  .custom-button {
+    font-size: 0.875rem; /* Scales font size for smaller screens */
+    padding: 10px;
+    max-width: 300px;
   }
+
+  .hover-effect {
+    height: 6rem;
+    width: 1.5rem;
+  }
+
+  .icon-text span {
+    font-size: 0.8rem;
+  }
+
+  .counter {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-button {
+    font-size: 0.75rem;
+    padding: 8px;
+    max-width: 100%;
+  }
+
+  .icon-text {
+    gap: 5px;
+  }
+
+  .stats {
+    gap: 3px;
+  }
+}
+
+  /* */
 
   .Home > .home-container > .mockups {
     color: black;
@@ -58,7 +155,7 @@
         background-color: #F7C542;
         color: white;
         cursor: pointer;
-        font-size: 18px;
+        font-size: 15px;
         margin: 35px;
         width: 180px;
         min-height:50px;

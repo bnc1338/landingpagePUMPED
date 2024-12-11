@@ -15,8 +15,38 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Partnership from './Sections/Partnership/Partnership.js';
 import Eula from './Sections/Eula/Eula.js';
 import Register from './Sections/Regiser/Register.js';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  const [isPostBack,setIsPostBack] = useState(false);
+  const [usersCount,setUsersCount]= useState(0);
+
+  const fetchUserCount = async function() {
+    const resp = await fetch(process.env.REACT_APP_API_IP+"getUsersCount", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body:JSON.stringify( {
+        authToken: process.env.REACT_APP_API_KEY
+      })
+    });
+    const data = await resp.json();
+    if(resp.status===200){
+      setUsersCount(data.count);
+    }
+    else{
+      setUsersCount(200);
+    }
+  }
+
+  useEffect(()=>{
+    if(isPostBack===false){
+      setIsPostBack(true);
+      fetchUserCount();
+    }
+    setIsPostBack(true);
+  },[])
+
   return (
     <div className="App">
       <Router>
@@ -31,7 +61,7 @@ function App() {
             //mukodj*/}
               <Navbar />
               <Container>
-                <Home />
+                <Home usersCount={usersCount}/>
                 <Video />
                 {/* <Competition /> */}
                 <BananasBack>
